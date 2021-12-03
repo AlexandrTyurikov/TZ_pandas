@@ -4,7 +4,6 @@ import pandas as pd
 
 df = pd.read_csv('AAVE_USD.csv')
 
-df.rename(columns={'time': 'date'}, inplace = True)
 df['date'] = pd.to_datetime(df.date).dt.date
 
 # определение на сколько изменилась цена внутри дня от начала дня к макс значению

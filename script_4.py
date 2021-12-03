@@ -5,6 +5,7 @@ df_USDC = pd.read_csv('WETH_USDC_normalized.csv')
 df_USDT = pd.read_csv('WETH_USDT_normalized.csv')
 
 df_USD = pd.DataFrame({
+    'date': df_USDC['time'],
     'USDC price': df_USDC['price'],
     'USDT price': df_USDT['price'],
     'Average USD price': (df_USDC['price'] + df_USDT['price']) / 2

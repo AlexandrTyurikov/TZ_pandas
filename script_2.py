@@ -8,7 +8,12 @@ def normalized_csv(name_csv, name_norm_csv):
 	df.to_csv(name_norm_csv)
 
 
-normalized_csv('AAVE_ETH_raw.csv', 'AAVE_ETH_normalized.csv')
+# normalized_csv('AAVE_ETH_raw.csv', 'AAVE_ETH_normalized.csv')
+
+
+
+
+
 
 
 
